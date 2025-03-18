@@ -2,6 +2,12 @@
 import logging
 import json
 import os
+import nest_asyncio
+import asyncio
+
+# Применяем nest_asyncio для поддержки вложенных циклов событий
+nest_asyncio.apply()
+
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
@@ -48,5 +54,4 @@ async def main():
     await application.run_polling()
 
 if __name__ == '__main__':
-    import asyncio
     asyncio.run(main())
