@@ -47,7 +47,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 logger.error(f"Ошибка отправки в группу {group_id}: {e}")
 
 async def main():
-    TOKEN = "YOUR_BOT_TOKEN_HERE"  # Замени на токен своего бота
+    TOKEN = "7520967541:AAERRk9IBh18GYFjrPUws4BZ9rmq-7u0Msw"  # Замени на токен своего бота
     application = ApplicationBuilder().token(TOKEN).build()
     application.add_handler(CommandHandler("start", start))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
