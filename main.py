@@ -6,7 +6,7 @@ import nest_asyncio
 import asyncio
 
 # Применяем nest_asyncio для поддержки вложенных циклов событий
-nest_asyncio.apply()
+nest-asyncio.apply()
 
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
