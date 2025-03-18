@@ -47,7 +47,7 @@ def handle_message(update: Update, context: CallbackContext):
                 logger.error(f"Ошибка отправки в группу {group_id}: {e}")
 
 def main():
-    TOKEN = "YOUR_BOT_TOKEN_HERE"  # Замени на токен своего бота
+    TOKEN = "7520967541:AAERRk9IBh18GYFjrPUws4BZ9rmq-7u0Msw"  # Замени на токен своего бота
     updater = Updater(token=TOKEN, use_context=True)
     dispatcher = updater.dispatcher
 
